@@ -1,1 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal() // For standard Gradle plugins
+        maven { url 'https://maven.fabricmc.net/' } // For Fabric Loom plugin
+    }
+}
+
 rootProject.name = 'TrajectoryMod'
