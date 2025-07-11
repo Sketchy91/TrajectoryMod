@@ -11,10 +11,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.axtonfn.trajectorymod.TrajectoryMod" // Corrected package
+      "com.axtonfn.trajectorymod.TrajectoryMod"
     ],
     "client": [
-      "com.axtonfn.trajectorymod.TrajectoryModClient" // Corrected package
+      "com.axtonfn.trajectorymod.TrajectoryModClient"
     ]
   },
   "mixins": [
@@ -23,8 +23,8 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": ">=${fabric_version}",
-    "minecraft": "${minecraft_version}",
-    "java": ">=17",
+    "minecraft": "[1.21, 1.22)",
+    "java": ">=21",
     "modmenu": "*"
   },
   "custom": {
