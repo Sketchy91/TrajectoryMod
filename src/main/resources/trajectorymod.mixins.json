@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.axtonfn.trajectorymod.mixin", // This matches the package of your Mixin Java classes
+  "compatibilityLevel": "JAVA17",
+  "mixins": [
+    // List your common (client and server) mixin classes here
+    "PlayerEntityMixin" // Added the example Mixin
+  ],
+  "client": [
+    // List your client-side only mixin classes here
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
