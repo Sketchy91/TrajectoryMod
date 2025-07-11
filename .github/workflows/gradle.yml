@@ -21,12 +21,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # Step 2: Set up Java Development Kit (JDK)
-    # Fabric mods for Minecraft 1.21.4 require Java 17
-    - name: Set up JDK 17
+    # Step 2: Set up Java Development Kit (JDK) - UPDATED TO JAVA 21
+    # Fabric Loom 1.11-SNAPSHOT requires Java 21
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '21' # Changed from '17' to '21'
         distribution: 'temurin' # Recommended distribution for GitHub Actions
         cache: 'gradle' # Caches Gradle dependencies to speed up builds
 
@@ -44,6 +44,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: TrajectoryMod-jar
-        path: build/libs/*.jar # Adjust this path if your JAR name/location is different
-        # You might want to exclude -dev.jar or -sources.jar if they are generated
-        # For example: path: build/libs/*-@(dev|sources).jar
+        path: build/libs/*.jar
