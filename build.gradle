@@ -1,8 +1,9 @@
 plugins {
-    id 'fabric-loom' version '1.6-SNAPSHOT'
+    // Using the specified Fabric Loom version
+    id 'fabric-loom' version '1.11-SNAPSHOT'
 }
 
-group = 'com.yourname'
+group = 'com.axtonfn'
 version = '1.0.0'
 
 repositories {
@@ -11,16 +12,22 @@ repositories {
 }
 
 dependencies {
+    
     minecraft 'com.mojang:minecraft:1.21.4'
-    mappings 'net.fabricmc:yarn:1.21.4+build.1:v2'
-    modImplementation 'net.fabricmc:fabric-loader:0.15.0'
-    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.98.0+1.21.4'
+    
+    mappings 'net.fabricmc:yarn:1.21.4+build.8:v2'
+   
+    modImplementation 'net.fabricmc:fabric-loader:0.16.14'
+    
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.119.3+1.21.4'
 }
 
 java {
+
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 loom {
+    
     splitEnvironmentSourceSets()
 }
