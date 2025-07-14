@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "trajectory",
+	"version": "${version}",
+	"name": "Trajectory",
+	"description": "Trajectory..　trajectory...　trajectory!",
+	"authors": [
+		"AxtonFN"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/trajectory/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"axtonfn.ml.Trajectory"
+		],
+		"fabric-datagen": [
+			"axtonfn.ml.TrajectoryDataGenerator"
+		]
+	},
+	"mixins": [
+		"trajectory.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
